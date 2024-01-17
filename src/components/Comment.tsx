@@ -5,7 +5,7 @@ import styles from "./Comment.module.css";
 
 interface CommentProps {
   content: string;
-  onDeleteComment: (commentToDelete: string) => void;
+  onDeleteComment: (comment: string) => void;
 }
 
 export function Comment({ content, onDeleteComment }: CommentProps) {
@@ -26,6 +26,7 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
       <Avatar
         hasBorder={false}
         src="https://avatars.githubusercontent.com/u/42375242?v=4"
+        alt=""
       />
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
